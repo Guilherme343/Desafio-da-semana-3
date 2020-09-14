@@ -1,0 +1,118 @@
+html, body {
+    margin: 0;
+}
+header {
+    background-color: darkred;
+    color: rgb(0, 0, 0);
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+}
+#logo {
+    width: 96px;
+    position: absolute; 
+    top: 10px;
+    margin-left: 5%;  
+}
+#menu {
+    float: right;
+    margin-right: 5%;
+    list-style: none;
+    margin-top: 0px;
+}
+li {
+    float: left;
+    padding: 20 10 20 10;
+}
+li:hover {
+    background-color: tomato;
+}
+#imagem_fundo {
+    background: url("img/capafundo.jpg");
+    height: 100%;
+    text-align: center;
+    background-image: cover;
+    background-size: cover;
+}
+#titulo {
+    color: white;
+    padding-top: 20%;
+    font-size: 40px;
+}
+#subtitulo {
+    color: white;
+    padding-left: 20%;
+    padding-right: 20%;
+
+}
+#ação {
+    color: white;
+    border: 1px white solid;
+    padding: 10px 20px 10px 20px ;  
+}
+.icone {
+    width: 59px;
+}
+section {
+    padding: 20px;
+    float: left;
+}
+.destaque {
+    background-color: #f7f7f7;
+}
+.imgeco {
+    width: 90%;
+    height: 30%;
+}
+.coluna {
+    float: left;
+    padding: 0 5%;
+    position: relative; 
+}
+.dois {
+    width: 40%;
+}
+.quatro {
+    width: 15%;
+}
+.tres {
+    width: 29%;
+    padding: 0 2%;
+}
+.justificado {
+    text-align: justify;
+}
+.centralizado {
+    text-align: center;    
+}
+.sobre {
+    width: 100%;
+}
+footer {
+    background-color: darkred;
+    float: left;
+    width: 100%;
+    padding-top: 10%;
+}
+@media all and (max-width: 768px) {
+   #menu {
+        visibility: hidden;
+   }
+   .coluna, .dois, .tres, .quatro {
+        display: block;
+        width: 80%;
+        padding: 0%;
+        margin: 10px auto;
+        float: none;
+   }
+   #logodiv {
+       width: 100%;
+       position: relative;
+       text-align: center;
+   }
+   #logo {
+       margin-left:  0px;
+       transform: translateX(-50%);
+   }        
+}
